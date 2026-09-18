@@ -1,6 +1,7 @@
 import { formatCurrency } from '../utils/formatters.js';
 import productsData from '../data/products.json';
 import { cartStore } from '../state/cartStore.js';
+import { showToast } from '../utils/toast.js';
 
 export function createBuildYourOwnModal() {
   const backdrop = document.createElement('div');
@@ -167,6 +168,7 @@ export function createBuildYourOwnModal() {
       observation: observationInput.value.trim()
     });
 
+    showToast('¡Tu pizzeta armada se agregó al pedido! 🍕');
     closeModal();
   });
 

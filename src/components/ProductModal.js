@@ -1,6 +1,7 @@
 import { formatCurrency } from '../utils/formatters.js';
 import productsData from '../data/products.json';
 import { cartStore } from '../state/cartStore.js';
+import { showToast } from '../utils/toast.js';
 
 export function createProductModal() {
   const backdrop = document.createElement('div');
@@ -149,6 +150,7 @@ export function createProductModal() {
       observation: observationInput.value.trim()
     });
 
+    showToast(`¡${currentProduct.name} agregada! 🍕`);
     closeModal();
   });
 
