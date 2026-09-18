@@ -1,0 +1,30 @@
+{
+  "name": "Pizzería Belgrano",
+  "tagline": "Del horno a su mesa",
+  "establishment": "Pizzería / Delivery",
+  "whatsapp": "59824813859",
+  "phone": "2481 3859",
+  "mobile": "092 884 951",
+  "address": "Belgrano 2881 esq. Centenario",
+  "instagram": "@pizzeria_belgrano",
+  "deliveryFee": 0,
+  "deliveryText": "Sin cargo",
+  "schedule": {
+    "sundayToThursday": {
+      "days": [0, 1, 2, 3, 4],
+      "openHour": 19,
+      "openMinute": 0,
+      "closeHour": 24,
+      "closeMinute": 0,
+      "label": "Domingo a Jueves: 19:00 a 00:00 hs"
+    },
+    "fridayAndSaturday": {
+      "days": [5, 6],
+      "openHour": 19,
+      "openMinute": 0,
+      "closeHour": 25,
+      "closeMinute": 0,
+      "label": "Viernes y Sábados: 19:00 a 01:00 hs"
+    }
+  }
+}

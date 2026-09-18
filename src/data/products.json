@@ -1,0 +1,454 @@
+{
+  "categories": [
+    { "id": "pizzetas", "name": "Pizzetas", "icon": "🍕" },
+    { "id": "gustos", "name": "Gustos", "icon": "🧀" },
+    { "id": "arma-tu-pizzeta", "name": "Armá tu pizzeta", "icon": "✨" },
+    { "id": "promo-belgrano", "name": "Promoción Belgrano", "icon": "⭐" },
+    { "id": "combos", "name": "Combos", "icon": "🔥" }
+  ],
+  "armaTuPizzetaConfig": {
+    "pricePerGusto": 70,
+    "gustos": [
+      "Aceitunas",
+      "Jamón",
+      "Huevo",
+      "Ananá",
+      "Morrón",
+      "Longaniza",
+      "Rúcula",
+      "Albahaca",
+      "Nuez",
+      "Atún",
+      "Palmitos",
+      "Champignon",
+      "Pepino",
+      "Tomate"
+    ]
+  },
+  "standardAddons": [
+    { "id": "faina-comun", "name": "Porción de fainá", "price": 150 },
+    { "id": "faina-muzza", "name": "Porción de fainá con muzzarella", "price": 200 },
+    { "id": "extra-muzza", "name": "Extra muzzarella", "price": 100 }
+  ],
+  "defaultRemovals": [
+    "Sin orégano",
+    "Sin aceitunas",
+    "Masa bien crocante / tostada",
+    "Masa tierna"
+  ],
+  "products": [
+    {
+      "id": "pizzeta-muzzarella",
+      "name": "Muzzarella",
+      "category": "pizzetas",
+      "categoryName": "Pizzetas",
+      "description": "Pizzeta clásica artesanal al horno con salsa de tomate casera y abundante muzzarella fundida con orégano.",
+      "price": 350,
+      "image": "/images/pizza_muzzarella.jpg",
+      "featured": true,
+      "badge": "Más pedida",
+      "available": true
+    },
+    {
+      "id": "pizzeta-muzzarella-caballo",
+      "name": "Muzzarella a caballo",
+      "category": "pizzetas",
+      "categoryName": "Pizzetas",
+      "description": "Nuestra tradicional pizzeta de muzzarella coronada con crocante porción de fainá a caballo recién salido del horno.",
+      "price": 650,
+      "image": "/images/pizza_a_caballo.jpg",
+      "featured": false,
+      "badge": "Especial de la casa",
+      "available": true
+    },
+    {
+      "id": "pizzeta-solo-salsa",
+      "name": "Solo salsa",
+      "category": "pizzetas",
+      "categoryName": "Pizzetas",
+      "description": "Masa crocante de horno con nuestra tradicional salsa casera de tomates frescos y aromático orégano.",
+      "price": 300,
+      "image": "/images/pizza_solo_salsa.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "pizzeta-solo-salsa-caballo",
+      "name": "Solo salsa a caballo",
+      "category": "pizzetas",
+      "categoryName": "Pizzetas",
+      "description": "Pizzeta solo salsa con generosa porción de fainá artesanal a caballo.",
+      "price": 600,
+      "image": "/images/pizza_a_caballo.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "pizzeta-morron",
+      "name": "Morrón",
+      "category": "pizzetas",
+      "categoryName": "Pizzetas",
+      "description": "Pizzeta con deliciosa muzzarella fundida y tiras de morrones dulces asados.",
+      "price": 400,
+      "image": "/images/pizza_morron.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "pizzeta-jamon",
+      "name": "Jamón",
+      "category": "pizzetas",
+      "categoryName": "Pizzetas",
+      "description": "Pizzeta con muzzarella y abundante jamón cocido seleccionado en finas fetas.",
+      "price": 400,
+      "image": "/images/pizza_jamon.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "pizzeta-longaniza",
+      "name": "Longaniza",
+      "category": "pizzetas",
+      "categoryName": "Pizzetas",
+      "description": "Muzzarella fundida y crocante combinada con rodajas de longaniza artesanal bien doraditas.",
+      "price": 400,
+      "image": "/images/pizza_longaniza.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "pizzeta-champignon",
+      "name": "Champignon",
+      "category": "pizzetas",
+      "categoryName": "Pizzetas",
+      "description": "Pizzeta con base de salsa, muzzarella y champignones frescos salteados.",
+      "price": 400,
+      "image": "/images/pizza_champignon.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "pizzeta-panceta",
+      "name": "Panceta",
+      "category": "pizzetas",
+      "categoryName": "Pizzetas",
+      "description": "Pizzeta con abundante muzzarella y tiras de panceta ahumada crujiente.",
+      "price": 400,
+      "image": "/images/pizza_panceta.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "pizzeta-pepperoni",
+      "name": "Pepperoni",
+      "category": "pizzetas",
+      "categoryName": "Pizzetas",
+      "description": "Pizzeta con muzzarella y rodajas de auténtico pepperoni tostado al calor del horno.",
+      "price": 400,
+      "image": "/images/pizza_pepperoni.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "pizzeta-palmitos",
+      "name": "Palmitos",
+      "category": "pizzetas",
+      "categoryName": "Pizzetas",
+      "description": "Pizzeta con muzzarella suave y trozos de palmitos tiernos de primera calidad.",
+      "price": 400,
+      "image": "/images/pizza_palmitos.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+
+    {
+      "id": "gusto-aceitunas",
+      "name": "Aceitunas",
+      "category": "gustos",
+      "categoryName": "Gustos",
+      "description": "Pizzeta cubierta de muzzarella fundida con generosa porción de aceitunas.",
+      "price": 400,
+      "image": "/images/pizza_aceitunas.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "gusto-anana",
+      "name": "Ananá",
+      "category": "gustos",
+      "categoryName": "Gustos",
+      "description": "El clásico toque agridulce: muzzarella fundida combinada con tiernas rodajas de ananá.",
+      "price": 400,
+      "image": "/images/pizza_anana.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "gusto-tomate-albahaca",
+      "name": "Tomate y albahaca",
+      "category": "gustos",
+      "categoryName": "Gustos",
+      "description": "Combinación fresca tipo caprese: rodajas de tomate natural, muzzarella y hojas de albahaca fresca.",
+      "price": 500,
+      "image": "/images/pizza_tomate_albahaca.jpg",
+      "featured": false,
+      "badge": "Recomendado",
+      "available": true
+    },
+    {
+      "id": "gusto-jamon-aceitunas",
+      "name": "Jamón y aceitunas",
+      "category": "gustos",
+      "categoryName": "Gustos",
+      "description": "La dupla más querida: jamón cocido de primera calidad y aceitunas sobre muzzarella dorada.",
+      "price": 500,
+      "image": "/images/pizza_jamon.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "gusto-longaniza-aceitunas",
+      "name": "Longaniza y aceitunas",
+      "category": "gustos",
+      "categoryName": "Gustos",
+      "description": "Sabor intenso con rodajas de longaniza artesanal y aceitunas verdes y negras.",
+      "price": 500,
+      "image": "/images/pizza_longaniza.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "gusto-jamon-huevo",
+      "name": "Jamón y huevo",
+      "category": "gustos",
+      "categoryName": "Gustos",
+      "description": "Muzzarella con fetas de jamón cocido y huevo duro picado con orégano.",
+      "price": 500,
+      "image": "/images/pizza_huevo.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "gusto-panceta-huevo-oregano",
+      "name": "Panceta, huevo y orégano",
+      "category": "gustos",
+      "categoryName": "Gustos",
+      "description": "Panceta crocante, huevo picado y toque de orégano sobre abundante muzzarella.",
+      "price": 550,
+      "image": "/images/pizza_panceta.jpg",
+      "featured": true,
+      "badge": "Especial",
+      "available": true
+    },
+    {
+      "id": "gusto-jamon-morron-aceitunas",
+      "name": "Jamón, morrón y aceitunas",
+      "category": "gustos",
+      "categoryName": "Gustos",
+      "description": "Una de las favoritas: jamón cocido, morrones asados en tiras y aceitunas sobre muzzarella.",
+      "price": 550,
+      "image": "/images/gustos_pizza.jpg",
+      "featured": true,
+      "badge": "Imperdible",
+      "available": true
+    },
+    {
+      "id": "gusto-jamon-rucula",
+      "name": "Jamón y rúcula",
+      "category": "gustos",
+      "categoryName": "Gustos",
+      "description": "Muzzarella fundida con jamón cocido y coronada con hojas frescas de rúcula.",
+      "price": 500,
+      "image": "/images/pizza_jamon_rucula.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+
+    {
+      "id": "arma-tu-pizzeta-custom",
+      "name": "Armá tu pizzeta",
+      "category": "arma-tu-pizzeta",
+      "categoryName": "Armá tu pizzeta",
+      "description": "¡Elegí los gustos que más te gusten! Precio por gusto: $70. Gustos a elección: Aceitunas, Jamón, Huevo, Ananá, Morrón, Longaniza, Rúcula, Albahaca, Nuez, Atún, Palmitos, Champignon, Pepino y Tomate.",
+      "price": 70,
+      "isCustomBuilder": true,
+      "image": "/images/arma_tu_pizzeta.jpg",
+      "featured": true,
+      "badge": "$70 por gusto",
+      "available": true
+    },
+
+    {
+      "id": "promo-belgrano-especial",
+      "name": "Promo Belgrano",
+      "category": "promo-belgrano",
+      "categoryName": "Promoción Belgrano",
+      "description": "El festín más completo de la pizzería: 4 muzzarellas + 4 porciones de fainá + 4 pizzas comunes + 1 Bebida de 2 L.",
+      "price": 1500,
+      "items": [
+        "4 muzzarellas",
+        "4 fainá",
+        "4 pizzas",
+        "Bebida 2 L"
+      ],
+      "image": "/images/promo_belgrano.jpg",
+      "featured": true,
+      "badge": "Súper Promo Familiar",
+      "available": true
+    },
+
+    {
+      "id": "combo-1",
+      "name": "COMBO 1",
+      "category": "combos",
+      "categoryName": "Combos",
+      "description": "1 pizza común + 1 muzzarella + 1 fainá + Bebida 1.5 L.",
+      "price": 500,
+      "items": [
+        "1 pizza común",
+        "1 muzzarella",
+        "1 fainá",
+        "Bebida 1.5 L"
+      ],
+      "image": "/images/combo_pizza.jpg",
+      "featured": false,
+      "badge": "Económico",
+      "available": true
+    },
+    {
+      "id": "combo-2",
+      "name": "COMBO 2",
+      "category": "combos",
+      "categoryName": "Combos",
+      "description": "2 muzzarellas + 2 fainá + Bebida 1.5 L.",
+      "price": 600,
+      "items": [
+        "2 muzzarellas",
+        "2 fainá",
+        "Bebida 1.5 L"
+      ],
+      "image": "/images/combo_pizza.jpg",
+      "featured": true,
+      "badge": "El más vendido",
+      "available": true
+    },
+    {
+      "id": "combo-3",
+      "name": "COMBO 3",
+      "category": "combos",
+      "categoryName": "Combos",
+      "description": "1 sándwich caliente + 1 fainá + Bebida 1.5 L.",
+      "price": 500,
+      "items": [
+        "1 sándwich caliente",
+        "1 fainá",
+        "Bebida 1.5 L"
+      ],
+      "image": "/images/sandwich_caliente.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "combo-4",
+      "name": "COMBO 4",
+      "category": "combos",
+      "categoryName": "Combos",
+      "description": "3 muzzarellas + 2 pizzas + 2 fainá + Bebida 1.5 L.",
+      "price": 900,
+      "items": [
+        "3 muzzarellas",
+        "2 pizzas",
+        "2 fainá",
+        "Bebida 1.5 L"
+      ],
+      "image": "/images/promo_belgrano.jpg",
+      "featured": false,
+      "badge": "Ideal para amigos",
+      "available": true
+    },
+    {
+      "id": "combo-5",
+      "name": "COMBO 5",
+      "category": "combos",
+      "categoryName": "Combos",
+      "description": "1 pizzeta con muzzarella + 2 fainá + Bebida 1.5 L.",
+      "price": 600,
+      "items": [
+        "1 pizzeta con muzzarella",
+        "2 fainá",
+        "Bebida 1.5 L"
+      ],
+      "image": "/images/combo_pizza.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "combo-6",
+      "name": "COMBO 6",
+      "category": "combos",
+      "categoryName": "Combos",
+      "description": "1/2 metro de muzzarella + 2 fainá + Bebida 1.5 L.",
+      "price": 800,
+      "items": [
+        "1/2 metro de muzzarella",
+        "2 fainá",
+        "Bebida 1.5 L"
+      ],
+      "image": "/images/pizza_medio_metro.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "combo-7",
+      "name": "COMBO 7",
+      "category": "combos",
+      "categoryName": "Combos",
+      "description": "2 pizzas + 2 muzzarellas + 2 fainá + Bebida 1.5 L.",
+      "price": 800,
+      "items": [
+        "2 pizzas",
+        "2 muzzarellas",
+        "2 fainá",
+        "Bebida 1.5 L"
+      ],
+      "image": "/images/promo_belgrano.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    },
+    {
+      "id": "combo-8",
+      "name": "COMBO 8",
+      "category": "combos",
+      "categoryName": "Combos",
+      "description": "1/2 metro de muzzarella + Bebida 1.5 L.",
+      "price": 600,
+      "items": [
+        "1/2 metro de muzzarella",
+        "Bebida 1.5 L"
+      ],
+      "image": "/images/pizza_medio_metro.jpg",
+      "featured": false,
+      "badge": null,
+      "available": true
+    }
+  ]
+}

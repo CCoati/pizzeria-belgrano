@@ -1,0 +1,313 @@
+/* Checkout Modal Styles */
+.checkout-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: var(--z-modal);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-normal), visibility var(--transition-normal);
+}
+
+@media (min-width: 640px) {
+  .checkout-modal-backdrop {
+    align-items: center;
+    padding: var(--space-md);
+  }
+}
+
+.checkout-modal-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.checkout-modal-sheet {
+  background: var(--color-surface);
+  width: 100%;
+  max-width: 580px;
+  max-height: 92vh;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-xl);
+  transform: translateY(100%);
+  transition: transform var(--transition-smooth);
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .checkout-modal-sheet {
+    border-radius: var(--radius-xl);
+    max-height: 88vh;
+    transform: scale(0.95) translateY(20px);
+  }
+}
+
+.checkout-modal-backdrop.active .checkout-modal-sheet {
+  transform: translateY(0);
+}
+
+@media (min-width: 640px) {
+  .checkout-modal-backdrop.active .checkout-modal-sheet {
+    transform: scale(1) translateY(0);
+  }
+}
+
+.checkout-header {
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+}
+
+.checkout-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkout-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+}
+
+.checkout-body {
+  padding: var(--space-lg);
+  overflow-y: auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Selector Tipo de Pedido (Delivery / Retiro) */
+.order-type-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  background: var(--color-surface-hover);
+  padding: 4px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.order-type-tab-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  transition: all var(--transition-fast);
+}
+
+.order-type-tab-btn.active {
+  background: white;
+  color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Form Styles */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.form-section-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+}
+
+@media (min-width: 480px) {
+  .form-grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.form-label .required-star {
+  color: var(--color-danger);
+  margin-left: 2px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-border);
+  background: white;
+  color: var(--color-text-main);
+  font-size: 0.95rem;
+  transition: all var(--transition-fast);
+}
+
+.form-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.12);
+}
+
+.form-input.error {
+  border-color: var(--color-danger);
+  background: #FFF5F5;
+}
+
+.form-error-hint {
+  font-size: 0.78rem;
+  color: var(--color-danger);
+  font-weight: 600;
+}
+
+/* Métodos de Pago: Solo Efectivo y Solicitar POS */
+.payment-methods-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.payment-card-option {
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  cursor: pointer;
+  background: white;
+  transition: all var(--transition-fast);
+}
+
+.payment-card-option:hover {
+  border-color: rgba(var(--color-primary-rgb), 0.4);
+}
+
+.payment-card-option.selected {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.payment-icon {
+  font-size: 1.5rem;
+}
+
+.payment-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+}
+
+.payment-desc {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* Efectivo: Cálculo de Cambio en Vivo */
+.cash-change-box {
+  background: #FFF9DB;
+  border: 1.5px solid #F59F00;
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.change-result-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.change-result-amount {
+  color: var(--color-secondary);
+  font-size: 1.15rem;
+  font-family: var(--font-heading);
+}
+
+.change-warning {
+  font-size: 0.82rem;
+  color: var(--color-danger);
+  font-weight: 700;
+}
+
+/* POS Box */
+.pos-info-box {
+  background: var(--color-secondary-light);
+  border: 1.5px solid rgba(var(--color-secondary-rgb), 0.3);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.88rem;
+  color: var(--color-secondary);
+  font-weight: 600;
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Footer Checkout */
+.checkout-footer {
+  padding: var(--space-md) var(--space-lg);
+  border-top: 1px solid var(--color-border);
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkout-summary-mini {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.92rem;
+}
+
+.checkout-submit-btn {
+  width: 100%;
+  height: 52px;
+  font-size: 1.05rem;
+  gap: 10px;
+}
