@@ -105,6 +105,36 @@
   gap: var(--space-sm);
 }
 
+.header-share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: white;
+  border: 1.5px solid var(--color-border);
+  color: var(--color-text-main);
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.88rem;
+  transition: all var(--transition-fast);
+}
+
+.header-share-btn:hover {
+  border-color: #25D366;
+  color: #25D366;
+  background: #EBFBEE;
+}
+
+@media (max-width: 480px) {
+  .header-share-btn .share-btn-text {
+    display: none;
+  }
+  .header-share-btn {
+    padding: 10px;
+    border-radius: 50%;
+  }
+}
+
 .cart-btn-header {
   position: relative;
   display: inline-flex;

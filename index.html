@@ -5,13 +5,69 @@
     <link rel="icon" type="image/png" href="/images/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#C92A2A" />
-    <title>Pizzería Belgrano — Del horno a su mesa | Menú y Pedidos Online</title>
-    <meta name="description" content="Menú online y pedidos por WhatsApp de Pizzería Belgrano. Pizzetas tradicionales, gustos, armá tu pizzeta, fainá y combos familiares con envíos sin cargo." />
-    
+
+    <!-- SEO Básico -->
+    <title>Pizzería Belgrano — Del horno a su mesa | Menú Digital & Pedidos Online</title>
+    <meta name="description" content="Del horno a su mesa. Mirá el menú completo de Pizzería Belgrano: clásicas pizzetas de muzzarella, fainá, gustos artesanales, combos y armá tu pizzeta. Envíos a domicilio y pedidos directos por WhatsApp." />
+    <meta name="keywords" content="Pizzería Belgrano, pizza Montevideo, pizzetas, delivery pizza, muzzarella, fainá, combos pizza Uruguay" />
+    <meta name="author" content="Pizzería Belgrano" />
+
+    <!-- Open Graph (WhatsApp, Facebook, Telegram, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pizzería Belgrano" />
+    <meta property="og:title" content="🍕 Pizzería Belgrano — Menú Digital & Pedidos Online" />
+    <meta property="og:description" content="Del horno a su mesa. Pizzetas artesanales, fainá crocante, combos familiares y armá tu pizzeta con tus gustos favoritos. Hacé tu pedido directo por WhatsApp." />
+    <meta property="og:image" content="/images/og_banner.jpg" />
+    <meta property="og:image:secure_url" content="/images/og_banner.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Pizzería Belgrano - Del horno a su mesa" />
+    <meta property="og:locale" content="es_UY" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="🍕 Pizzería Belgrano — Menú Digital & Pedidos Online" />
+    <meta name="twitter:description" content="Del horno a su mesa. Mirá nuestro menú de pizzetas artesanales y realizá tu pedido directo por WhatsApp." />
+    <meta name="twitter:image" content="/images/og_banner.jpg" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD para Restaurante / Pizzería -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Pizzería Belgrano",
+      "image": "/images/og_banner.jpg",
+      "servesCuisine": "Pizza",
+      "priceRange": "$$",
+      "telephone": "+59824813859",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Belgrano 2881 esq. Centenario",
+        "addressLocality": "Montevideo",
+        "addressCountry": "UY"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "19:00",
+          "closes": "00:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday", "Saturday"],
+          "opens": "19:00",
+          "closes": "01:00"
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="app"></div>

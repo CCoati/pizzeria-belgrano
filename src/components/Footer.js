@@ -1,4 +1,5 @@
 import businessData from '../data/business.json';
+import { shareMenuWeb } from '../utils/share.js';
 
 export function createFooter({ onOrderClick }) {
   const footer = document.createElement('footer');
@@ -15,7 +16,7 @@ export function createFooter({ onOrderClick }) {
             Pizzería artesanal tradicional con sabor de barrio. Horneamos cada pizzeta y fainá con ingredientes frescos y seleccionados para brindarte la mejor experiencia en cada bocado.
           </p>
           <div style="margin-top: 8px;">
-            <span class="footer-badge-delivery">🛵 Envíos sin cargo</span>
+            <span class="footer-badge-delivery">🛵 Envíos a Domicilio</span>
           </div>
         </div>
 
@@ -56,9 +57,14 @@ export function createFooter({ onOrderClick }) {
             </li>
           </ul>
 
-          <button type="button" class="btn btn-primary" id="footer-order-btn" style="margin-top: 8px;">
-            Hacer pedido ahora
-          </button>
+          <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 8px;">
+            <button type="button" class="btn btn-primary" id="footer-order-btn">
+              Hacer pedido ahora
+            </button>
+            <button type="button" class="btn btn-whatsapp" id="footer-share-btn">
+              <span>📲 Compartir Menú por WhatsApp</span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -72,6 +78,8 @@ export function createFooter({ onOrderClick }) {
   footer.querySelector('#footer-order-btn').addEventListener('click', () => {
     if (onOrderClick) onOrderClick();
   });
+
+  footer.querySelector('#footer-share-btn').addEventListener('click', shareMenuWeb);
 
   return footer;
 }

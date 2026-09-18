@@ -1,5 +1,6 @@
 import { checkBusinessStatus } from '../utils/schedule.js';
 import { cartStore } from '../state/cartStore.js';
+import { shareMenuWeb } from '../utils/share.js';
 
 export function createHeader({ onCartClick }) {
   const header = document.createElement('header');
@@ -31,12 +32,23 @@ export function createHeader({ onCartClick }) {
           <span>Abierto ahora</span>
         </div>
         <div class="header-hours-info">
-          <div><strong>Envíos sin cargo</strong></div>
+          <div><strong>Envíos a Domicilio</strong></div>
           <span>Dom a Jue 19-00h | Vie y Sáb 19-01h</span>
         </div>
       </div>
 
       <div class="header-actions">
+        <button type="button" class="header-share-btn" id="header-share-btn" aria-label="Compartir menú" title="Compartir menú por WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="18" cy="5" r="3"></circle>
+            <circle cx="6" cy="12" r="3"></circle>
+            <circle cx="18" cy="19" r="3"></circle>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+          </svg>
+          <span class="share-btn-text">Compartir</span>
+        </button>
+
         <button type="button" class="cart-btn-header" id="header-cart-btn" aria-label="Ver carrito de compras">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="9" cy="21" r="1"></circle>
@@ -49,6 +61,9 @@ export function createHeader({ onCartClick }) {
       </div>
     </div>
   `;
+
+  // Listener para compartir menú
+  header.querySelector('#header-share-btn').addEventListener('click', shareMenuWeb);
 
   // Listener para abrir carrito
   header.querySelector('#header-cart-btn').addEventListener('click', onCartClick);
