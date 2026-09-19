@@ -53,7 +53,7 @@ export function createFooter({ onOrderClick }) {
             </li>
             <li class="footer-list-item">
               <span class="footer-icon">💬</span>
-              <div>WhatsApp: +598 2481 3859</div>
+              <div>WhatsApp: +598 92 884 951</div>
             </li>
           </ul>
 

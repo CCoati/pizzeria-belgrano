@@ -1,4 +1,5 @@
 import { formatCurrency } from './formatters.js';
+import businessData from '../data/business.json';
 
 /**
  * Genera el texto del pedido y el enlace de WhatsApp con una estructura clara y ordenada
@@ -112,7 +113,8 @@ export function generateWhatsAppOrder({
 
   const fullMessage = lines.join('\n');
   const encodedMessage = encodeURIComponent(fullMessage);
-  const whatsappUrl = `https://wa.me/59824813859?text=${encodedMessage}`;
+  const whatsappNumber = businessData.whatsapp || '59892884951';
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
   return {
     messageText: fullMessage,

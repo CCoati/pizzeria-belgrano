@@ -15,7 +15,7 @@ Aplicación web moderna, responsive y mobile-first para **Pizzería Belgrano**. 
 - 💵 **Checkout Inteligente:**
   - Selección entre **Delivery** y **Retiro en el local**.
   - Métodos de pago exclusivos: **Efectivo** (con cálculo automático de cambio/vuelto en vivo) y **Solicitar POS**.
-- 💬 **Integración con WhatsApp:** Generación automática del pedido estructurado con formato enriquecido para `wa.me/59824813859`.
+- 💬 **Integración con WhatsApp:** Generación automática del pedido estructurado con formato enriquecido para `wa.me/59892884951`.
 - 🕒 **Horarios en Vivo:** Detección en tiempo real de apertura y cierre del local según la hora de Montevideo.
 - 📦 **100% Client-Side:** Los productos y configuraciones se administran desde archivos JSON locales sin necesidad de backend o base de datos.
 
